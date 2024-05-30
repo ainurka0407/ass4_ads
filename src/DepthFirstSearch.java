@@ -10,6 +10,8 @@ public class DepthFirstSearch<Vertex> extends Search<Vertex> {
     private void dfs(MyGraph<Vertex> graph, Vertex current) {
         marked.add(current);
 
+
+
         for (Vertex v : graph.adjacencyList(current)) {
             if (!marked.contains(v)) {
                 edgeTo.put(v, current);

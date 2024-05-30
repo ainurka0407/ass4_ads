@@ -12,6 +12,7 @@ public class Vertex<V> {
         this.data = data;
     }
     public V getData(){
+
         return data;
     }
     public Map<Vertex<V>, Double> getAdjacentVertices(){
